@@ -1,0 +1,18 @@
+sentence = "Некоторые слова в предложении начинаются с буквы н, а другие оканчиваются буквой р" 
+ 
+# a) количество слов, начинающихся с буквы "н" 
+count_n_words = 0 
+words_array = sentence.split() 
+for word in words_array: 
+    if word.lower().startswith("н"): 
+        count_n_words += 1 
+ 
+print("Количество слов, начинающихся с буквы 'н':", count_n_words) 
+ 
+# б) количество слов, оканчивающихся буквой "р" 
+count_r_words = 0 
+for word in words_array: 
+    if word.lower().endswith("р"): 
+        count_r_words += 1 
+ 
+print("Количество слов, оканчивающихся буквой 'р':", count_r_words)
